@@ -9,6 +9,7 @@
     
     .Header img {
     width: auto;
+    margin-left:100px;
     }
     
     .Header nav {
@@ -16,5 +17,12 @@
     }
     
     .Header nav .Link {
-    margin-left: 60px;
+    margin-left: 57px;
+    margin-right: 100px;
+    color: #FF6060;
+    text-decoration: none;
+    }
+
+    .Header nav .Link:hover {
+        text-decoration: underline;
     }

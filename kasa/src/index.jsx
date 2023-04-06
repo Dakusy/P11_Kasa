@@ -2,6 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
+config.license = "free";
+
 import './css/index.css';
 
 import Home from './pages/Home';

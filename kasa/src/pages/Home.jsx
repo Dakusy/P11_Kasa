@@ -1,26 +1,23 @@
+import React from "react";
 import logo from '../logo.svg';
-import '../css/App.css';
-import '../css/Header.css'
+
+import '../css/Header.css';
+import '../css/Footer.css';
+
+import Card from "../components/modules/Card.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class= "card-container">
+      <Card title="Titre de la location" imageSrc={logo} />
+      <Card title="Titre de la location" imageSrc={logo} />
+      <Card title="Titre de la location" imageSrc={logo} />
+      <Card title="Titre de la location" imageSrc={logo} />
+      <Card title="Titre de la location" imageSrc={logo} />
+      <Card title="Titre de la location" imageSrc={logo} />
+
     </div>
   );
-}
+};
 
 export default App;
