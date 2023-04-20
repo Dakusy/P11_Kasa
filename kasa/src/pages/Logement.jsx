@@ -4,6 +4,7 @@ import Banner from "../components/modules/Banner";
 import Collapse from "../components/modules/Collapse";
 import Tags from "../components/modules/Tags";
 import Slideshow from "../components/modules/Slideshow";
+import Rating from "../components/modules/Raiting";
 
 import '../css/Logement.css';
 
@@ -28,15 +29,16 @@ function Logement() {
                     <div className="lessor_rates">
                     </div>
                 </div>
-
+                <Rating data={logement} />
                 <div className="host">
                     <div className="host-name">
                     <h4 className= "host-first-name">{firstName}</h4>
                     <h4 className="host-last-name">{lastName}</h4>
                     </div>
-
                     <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
+
                 </div>
+
 
                 <div className="texts">
                     <Collapse title="Description">{logement.description}</Collapse>
