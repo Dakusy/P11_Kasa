@@ -2,6 +2,8 @@ import Collapse from "../components/modules/Collapse";
 import Banner from "../components/modules/Banner";
 import bannerImage from '../assets/Background.png';
 
+import '../css/Apropos.css';
+
 function Apropos() {
     const descriptions = {
         fiabilite: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",

@@ -1,0 +1,64 @@
+.House .content .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.House .content .top h1,
+.House .content .top h3 {
+    font-weight: 500;
+}
+
+.House .content .top h1 {
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.House .content .top h3 {
+    font-size: 18px;
+    margin-top: -15px;
+    color: #FF6060;
+}
+
+
+.House .content .texts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 100px;
+    align-items: flex-start;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+  }
+  
+  .host-name {
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .host .host-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .host .host-name .first-name {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .host .host-name .last-name {
+    margin: 0;
+    font-size: 14px;
+  }

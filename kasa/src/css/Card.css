@@ -33,3 +33,9 @@
   font-weight: bold;
   color: #333;
 }
+
+.card a {
+  text-decoration: none;
+  color:#FFFFFF;
+
+}

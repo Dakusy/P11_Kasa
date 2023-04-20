@@ -1,21 +1,31 @@
 import React from "react";
 import logo from '../logo.svg';
 
+import data from "../assets/data.json";
+import bannerImage from '../assets/Background.png';
+
 import '../css/Header.css';
 import '../css/Footer.css';
+import '../css/Banner.css';
 
 import Card from "../components/modules/Card.jsx";
+import Banner from "../components/modules/Banner.jsx";
+
+
 
 function App() {
   return (
-    <div class= "card-container">
-      <Card title="Titre de la location" imageSrc={logo} />
-      <Card title="Titre de la location" imageSrc={logo} />
-      <Card title="Titre de la location" imageSrc={logo} />
-      <Card title="Titre de la location" imageSrc={logo} />
-      <Card title="Titre de la location" imageSrc={logo} />
-      <Card title="Titre de la location" imageSrc={logo} />
+    <div>
+      <Banner
+        image={bannerImage}
+      />
+      <div class="card-container">
+        {data.map((item) => (
+          <Card key={item.id} data={item} />
+        ))}
 
+
+      </div>
     </div>
   );
 };

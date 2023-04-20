@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-config.autoAddCss = false;
-config.license = "free";
+
 
 import './css/index.css';
 
@@ -21,20 +20,21 @@ import Footer from './components/Footer';
 
 import reportWebVitals from './reportWebVitals';
 
-
+config.autoAddCss = false;
+config.license = "free";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Header></Header>
+      <Header />
       <Routes>
-    <Route exact path="/" element={<Home/>} />
-    <Route exact path="/logement" element={<Logement/>} />
-    <Route exact path="/apropos" element={<Apropos/>} />
-    <Route exact path="*" element={<PageNotFound/>} />
-    </Routes>
-    <Footer></Footer>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/logement/:id" element={<Logement />} />
+        <Route exact path="/apropos" element={<Apropos />} />
+        <Route exact path="*" element={<PageNotFound />} />
+      </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

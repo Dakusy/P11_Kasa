@@ -1,17 +1,21 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-function Collapse({ title, children }) {
+const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleToggle = () => setIsOpen(!isOpen);
+
   return (
-    <div className="collapse">
-      <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
+    <div className="collapse-container">
+      <div className="collapse-header" onClick={handleToggle}>
         <h2>{title}</h2>
-        <span>{isOpen ? "-" : "+"}</span>
+        <FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} />
       </div>
       {isOpen && <div className="collapse-content">{children}</div>}
     </div>
   );
-}
+};
 
 export default Collapse;

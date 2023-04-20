@@ -1,16 +1,17 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "../../css/Card.css"
 
-const Card = ({ title, imageSrc }) => {
+function Card({ data }) {
   return (
     <div className="card">
-      <img src={imageSrc} alt={title} />
-      <div className="card-body">
-        <h3 className="card-title">{title}</h3>
-      </div>
+      <Link to={`/Logement/${data.id}`}>
+      <img className="card-img" src={data.cover} alt={data.title} />
+      <div className="card-title">{data.title}</div>
+      </Link>
     </div>
   );
 };
+
 
 export default Card;
