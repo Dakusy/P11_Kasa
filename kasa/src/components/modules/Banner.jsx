@@ -1,13 +1,10 @@
 import React from 'react';
 
-const Banner = ({ title, subtitle, image }) => {
+const Banner = ({ title, image }) => {
   return (
     <div className="banner">
       <img src={image} alt={title} />
-      <div className="banner__content">
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-      </div>
+      <div className="banner__alt">{title}</div>
     </div>
   );
 };

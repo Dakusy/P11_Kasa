@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../logo.svg';
 
 import data from "../assets/data.json";
 import bannerImage from '../assets/Background.png';
@@ -17,6 +16,7 @@ function App() {
   return (
     <div>
       <Banner
+      title="Chez vous, partout et ailleurs"
         image={bannerImage}
       />
       <div class="card-container">

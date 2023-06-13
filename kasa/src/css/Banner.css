@@ -1,3 +1,13 @@
+.banner__alt {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+	font-size: 30px;
+  }
+
 .banner img{
     width: 86%;
     height: 223px;
@@ -16,3 +26,12 @@
 	background-color: #ccc;
 	object-fit: cover;
 }
+
+@media (max-width: 769px) {
+
+	.banner__alt{
+		font-size: 24px;
+		left: 40%
+	}
+}
+
