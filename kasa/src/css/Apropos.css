@@ -6,3 +6,10 @@
     align-content: baseline;
     margin-top: 26px
 }
+
+ /*Responsive*/
+ @media (max-width: 769px) {
+    .collapse-container{
+        margin-bottom:30px;
+    }
+ }

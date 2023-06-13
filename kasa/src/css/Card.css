@@ -39,3 +39,18 @@
   color:#FFFFFF;
 
 }
+
+
+@media (max-width: 769px) {
+  .card-container{
+    flex-direction: column;
+  }
+
+  .card{
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    height:335px
+  }
+
+}
