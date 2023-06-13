@@ -54,5 +54,35 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: relative
+  position: relative;
 }
+
+
+ /*Responsive*/
+ @media (max-width: 769px) {
+
+  .title h1{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .title h3{
+    font-size: 14px;
+    font-weight:500;
+  }
+
+  .host {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  .host-picture{
+    width:29%
+  }
+
+  .texts {
+    flex-direction: column;
+  }
+ }

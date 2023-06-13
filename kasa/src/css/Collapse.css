@@ -54,3 +54,14 @@
     margin: 0;
     padding: 70px 5px 30px 20px;
 }
+
+ /*Responsive*/
+ @media (max-width: 769px) {
+
+    .collapse-container{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20%;
+    }
+
+ }

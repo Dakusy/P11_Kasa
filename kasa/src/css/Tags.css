@@ -12,3 +12,11 @@
     padding: 3px 10px;
     margin: 2px 5px
 }
+
+ /*Responsive*/
+ @media (max-width: 769px) {
+    .tag-container{
+        flex-direction: row;
+        font-size: 18px;
+    }
+ }
