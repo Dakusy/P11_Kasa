@@ -36,9 +36,8 @@ function Logement() {
 
                 <div className="host">
                     <div className="host-info">
-                    <h4 className= "host-first-name">{firstName}</h4>
-                    <h4 className="host-last-name">{lastName}</h4>
-                    <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
+                        <h4 className= "host-first-name">{logement.host.name}</h4>
+                        <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
                     </div>
                     <Rating data={logement} />
                 </div>
