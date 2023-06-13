@@ -32,9 +32,6 @@ function Logement() {
                         <h3>{logement.location}</h3>
                         <Tags tagValue={logement.tags} />
                     </div>
-                    
-                    <div className="lessor_rates">
-                    </div>
                 </div>
 
                 <div className="host">
@@ -48,7 +45,11 @@ function Logement() {
 
                 <div className="texts">
                     <Collapse title="Description">{logement.description}</Collapse>
-                    <Collapse title="Equipements">{logement.equipments} </Collapse>
+                    <Collapse title="Équipements">{
+                        <ul>
+                            {logement.equipments.map((equipement, i) => ( <li key={i}>{equipement}</li> ))}
+                        </ul>
+                    }</Collapse>
                 </div>
             </div>
         </div>

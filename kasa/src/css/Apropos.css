@@ -1,0 +1,8 @@
+.AboutTxt .collapse-container {
+    width:75%;
+    margin-left:12.5%;
+    min-height: 52px;
+    border-radius: 10px;
+    align-content: baseline;
+    margin-top: 26px
+}
