@@ -39,7 +39,7 @@ function Logement() {
                         <h4 className= "host-first-name">{logement.host.name}</h4>
                         <img className="host-picture" src={logement.host.picture} alt={logement.host.name} />
                     </div>
-                    <div class="rating">
+                    <div className="rating">
                     <Rating data={logement} />
                     </div>
                 </div>

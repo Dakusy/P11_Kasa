@@ -10,8 +10,8 @@ const Collapse = ({ title, children }) => {
   return (
     <div className="collapse-container">
       <div className="collapse-header" onClick={handleToggle}>
-        <h2 class="title">{title}</h2>
-        <div class ="chevron"><FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} /></div>
+        <h2 className="title">{title}</h2>
+        <div className ="chevron"><FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} /></div>
       </div>
       {isOpen && <div className="collapse-content">{children}</div>}
     </div>

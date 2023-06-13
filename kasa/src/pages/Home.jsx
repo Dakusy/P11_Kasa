@@ -16,10 +16,10 @@ function App() {
   return (
     <div>
       <Banner
-      title="Chez vous, partout et ailleurs"
+        title="Chez vous, partout et ailleurs"
         image={bannerImage}
       />
-      <div class="card-container">
+      <div className="card-container">
         {data.map((item) => (
           <Card key={item.id} data={item} />
         ))}
