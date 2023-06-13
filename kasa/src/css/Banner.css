@@ -1,4 +1,4 @@
-.banner {
+.banner img{
     width: 86%;
     height: 223px;
     background-size: cover;
@@ -9,10 +9,10 @@
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	height: 200px;
 	border-radius: 25px;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
 	background-color: #ccc;
+	object-fit: cover;
 }
