@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 
 const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,12 +23,16 @@ const Slideshow = ({ pictures }) => {
   };
 
   return (
-    <div>
-      <img src={pictures[currentIndex]} alt="Slideshow" />
-
-      <button onClick={previousSlide}>Previous</button>
-      <button onClick={nextSlide}>Next</button>
-    </div>
+    <><div className="pictures-container">
+      <img src={pictures[currentIndex]} alt="Photos du logement" className="img-carousel" key={currentIndex} />
+    </div><section className="arrows">
+        <div id="arrow_back" onClick={() => previousSlide()}>
+        <FontAwesomeIcon icon={faArrowLeft} />
+        </div>
+        <div id="arrow_next" onClick={() => nextSlide()}>
+        <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+      </section><p className="counter">{currentIndex + 1}/{pictures.length}</p></>
   );
 };
 

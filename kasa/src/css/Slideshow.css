@@ -1,0 +1,81 @@
+.SlideShow {
+    width: 70%; /*1240px;*/
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
+    position: relative
+}
+
+.pictures-container {
+    width: 100%;
+    display: flex;
+    max-height: 415px;
+    overflow: hidden
+}
+
+.img-carousel {
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover
+}
+
+.arrows {
+    display: flex;
+    width: 90%;
+    font-size: 5em;
+    justify-content: space-between;
+    position: absolute;
+    top: 150.7px
+}
+
+.arrow_nxt:hover, .arrow_bck:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out
+}
+
+.arrow_nxt, .arrow_bck {
+    color: #FFF
+}
+
+.counter {
+    color: #000000;
+    position: absolute;
+    bottom: 0
+}
+/*RESPONSIVE*/
+
+@media screen and (min-width:1600px) {
+    #carousel {
+        height: 560px
+    }
+
+    .pictures-container {
+        max-height: 560px
+    }
+    .arrows {
+        top: 247.5px
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .arrows {
+        font-size: 4em;
+        top: 175.5px
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    #carousel {
+        width: 90%;
+        height: 255px
+    }
+    
+    .arrows {
+        font-size: 2em;
+        top: 104.7px
+    }
+}

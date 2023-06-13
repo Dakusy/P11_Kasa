@@ -1,8 +1,9 @@
 import Collapse from "../components/modules/Collapse";
 import Banner from "../components/modules/Banner";
-import bannerImage from '../assets/Background.png';
+import bannerImage from '../assets/Background2.png';
 
 import '../css/Apropos.css';
+import '../css/Collapse.css';
 
 function Apropos() {
     const descriptions = {

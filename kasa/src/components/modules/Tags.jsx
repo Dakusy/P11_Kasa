@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react"
+import "../../css/Tags.css"
 
-function Tags(props) {
-  const { tags } = props;
+export default function Tag(props) {
+    const tagValue = props.tagValue
 
-  return (
-    <ul className="tags">
-      {tags.map((tag, index) => (
-        <li key={index}>{tag}</li>
-      ))}
-    </ul>
-  );
+    return(
+        <div className="tag-container">{
+           
+            tagValue.map((tag) => { 
+                return <p className="tag" key={tag}>{tag}</p>
+            })
+        }</div>
+    )
+
 }
-
-export default Tags;

@@ -1,68 +1,40 @@
-.House .content .top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.texts {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.House .content .top h1,
-.House .content .top h3 {
-    font-weight: 500;
+.content {
+  width: 86%; /*1240px;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px auto 10px;
+  align-content: baseline;
+  justify-content: space-between
 }
 
-.House .content .top h1 {
-    font-size: 36px;
-    color: #FF6060;
+.title {
+  color: #FF6060;
+
+  font-size: 2.25em; /*36px*/
+  margin-bottom: 0;
+  margin-top: 35px
 }
 
-.House .content .top h3 {
-    font-size: 18px;
-    margin-top: -15px;
-    color: #FF6060;
+.host-info {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  justify-content: flex-end;
+  margin-top: 26px;
 }
 
-
-.House .content .texts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin-bottom: 100px;
-    align-items: flex-start;
+.host-picture {
+  border-radius: 50%;
+  width: 60%
 }
 
-.host {
-    display: flex;
-    align-items: center;
-  }
-  
-  .host-name {
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .host-picture {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .host .host-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .host .host-name .first-name {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .host .host-name .last-name {
-    margin: 0;
-    font-size: 14px;
-  }
-
-i {
- color:#FF6060;
+.top {
+  width: 79%
 }
+
