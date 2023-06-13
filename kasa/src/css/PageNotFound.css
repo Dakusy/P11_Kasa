@@ -24,4 +24,18 @@
   }
   
 
+ /*Responsive*/
+ @media (max-width: 769px) {
+  .Error404 .error_name{
+    width: 100%;
+    font-size: 96px;
+  }
+
+  .Error404 .error_txt{
+    width: 100%;
+    font-size: 24px;
+  }
+
+ }
+
   

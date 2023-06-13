@@ -5,24 +5,56 @@
     width: 100%;
     font-weight: 500;
     font-size: 24px;
-    }
-    
-    .Header img {
+}
+
+.Header img {
     width: auto;
-    margin-left:100px;
-    }
-    
-    .Header nav {
+    margin-left: 100px;
+}
+
+.Header nav {
     margin-left: auto;
-    }
-    
-    .Header nav .Link {
+}
+
+.Header nav .Link {
     margin-left: 57px;
     margin-right: 100px;
     color: #FF6060;
     text-decoration: none;
+}
+
+.Header nav .Link:hover {
+    text-decoration: underline;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 769px) {
+
+    .Header {
+        margin: 0px 0px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 15px;
     }
 
-    .Header nav .Link:hover {
-        text-decoration: underline;
+    .Header img {
+        width: 70%;
+        margin-top: 10px;
+        margin-left: 10px;
     }
+
+    .nav {
+        display: flex;
+        flex-direction:row;
+        margin-left: 15px;
+    }
+
+    .Header nav .Link {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #FF6060;
+        text-decoration: none;
+    }
+
+}

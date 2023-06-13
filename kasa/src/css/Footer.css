@@ -16,7 +16,7 @@
   }
   
   /*Responsive*/
-  @media (max-width: 964px) {
+  @media (max-width: 769px) {
     .Footer {
       font-size: 14px;
     }
@@ -26,14 +26,6 @@
     }
   }
   
-  @media (max-width:768px) {
-    .Footer {
-      font-size: 12px;
-      padding: 10vh;
-    }
-    .logo_footer {
-      width: 150px;
-      margin-bottom: 15px;
-    }
-  }
+
+  
   

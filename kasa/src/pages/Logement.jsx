@@ -18,7 +18,7 @@ function Logement() {
         return <Navigate to="error" />;
       }
 
-    const [firstName, lastName] = logement.host.name.split(' ');
+    //const [firstName, lastName] = logement.host.name.split(' ');
 
     return (
         <div className="House">
